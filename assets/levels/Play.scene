@@ -1,0 +1,56 @@
+{
+    "id": "26eb6bfe-87b7-43b7-9b39-83a687cfc01a",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "sceneKey": "Play",
+        "borderHeight": 356
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "746c4e76-6658-4c1a-a3f1-56df6f997f05",
+            "label": "sky",
+            "texture": {
+                "key": "back_1"
+            },
+            "x": 121,
+            "y": 272
+        },
+        {
+            "type": "Image",
+            "id": "4bc2c083-c771-4857-9f70-9b7a45a89a2b",
+            "label": "mountains",
+            "texture": {
+                "key": "rocks_1"
+            },
+            "x": 338,
+            "y": 97
+        },
+        {
+            "type": "Image",
+            "id": "d4e4ee3b-aa7c-42f5-a862-3e642a5ffc60",
+            "label": "waterFall",
+            "texture": {
+                "key": "waterFall"
+            },
+            "x": 289,
+            "y": 264
+        },
+        {
+            "type": "Image",
+            "id": "89a17e9b-3835-4c83-93b4-572bfd104bd5",
+            "label": "jungle",
+            "texture": {
+                "key": "backgound"
+            },
+            "x": 408,
+            "y": 248
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    }
+}

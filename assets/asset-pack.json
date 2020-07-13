@@ -1,0 +1,239 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/dino.png",
+                "type": "image",
+                "key": "dino"
+            },
+            {
+                "url": "assets/levels/Level.js",
+                "type": "sceneFile",
+                "key": "Level"
+            },
+            {
+                "url": "assets/images/clouds_1.png",
+                "type": "image",
+                "key": "clouds_1"
+            },
+            {
+                "url": "assets/images/clouds_2.png",
+                "type": "image",
+                "key": "clouds_2"
+            },
+            {
+                "url": "assets/images/rocks_1.png",
+                "type": "image",
+                "key": "rocks_1"
+            },
+            {
+                "url": "assets/images/sky.png",
+                "type": "image",
+                "key": "sky"
+            },
+            {
+                "atlasURL": "assets/atlas/dragon.png",
+                "textureURL": "assets/atlas/dragon.png",
+                "type": "atlas",
+                "key": "dragon"
+            },
+            {
+                "atlasURL": "assets/atlas/Objects.png",
+                "textureURL": "assets/atlas/Objects.png",
+                "type": "atlas",
+                "key": "Objects"
+            },
+            {
+                "url": "assets/images/backgound.png",
+                "type": "image",
+                "key": "backgound"
+            },
+            {
+                "url": "assets/images/play.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "play"
+            },
+            {
+                "url": "assets/images/learn.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "learn"
+            },
+            {
+                "url": "assets/images/PlayBackgound.png",
+                "type": "image",
+                "key": "PlayBackgound"
+            },
+            {
+                "url": "assets/levels/Play.js",
+                "type": "sceneFile",
+                "key": "Play"
+            },
+            {
+                "url": "assets/images/DragImages/1.png",
+                "type": "image",
+                "key": "1"
+            },
+            {
+                "url": "assets/images/TrueImages/1.png",
+                "type": "image",
+                "key": "1_1"
+            },
+            {
+                "url": "assets/images/DragImages/9.png",
+                "type": "image",
+                "key": "9"
+            },
+            {
+                "url": "assets/images/DragImages/8.png",
+                "type": "image",
+                "key": "8"
+            },
+            {
+                "url": "assets/images/DragImages/7.png",
+                "type": "image",
+                "key": "7"
+            },
+            {
+                "url": "assets/images/DragImages/6.png",
+                "type": "image",
+                "key": "6"
+            },
+            {
+                "url": "assets/images/DragImages/4.png",
+                "type": "image",
+                "key": "4"
+            },
+            {
+                "url": "assets/images/DragImages/5.png",
+                "type": "image",
+                "key": "5"
+            },
+            {
+                "url": "assets/images/DragImages/3.png",
+                "type": "image",
+                "key": "3"
+            },
+            {
+                "url": "assets/images/DragImages/2.png",
+                "type": "image",
+                "key": "2"
+            },
+            {
+                "url": "assets/images/TrueImages/2.png",
+                "type": "image",
+                "key": "2_1"
+            },
+            {
+                "url": "assets/images/TrueImages/3.png",
+                "type": "image",
+                "key": "3_1"
+            },
+            {
+                "url": "assets/images/TrueImages/4.png",
+                "type": "image",
+                "key": "4_1"
+            },
+            {
+                "url": "assets/images/TrueImages/5.png",
+                "type": "image",
+                "key": "5_1"
+            },
+            {
+                "url": "assets/images/TrueImages/6.png",
+                "type": "image",
+                "key": "6_1"
+            },
+            {
+                "url": "assets/images/TrueImages/7.png",
+                "type": "image",
+                "key": "7_1"
+            },
+            {
+                "url": "assets/images/TrueImages/8.png",
+                "type": "image",
+                "key": "8_1"
+            },
+            {
+                "url": "assets/images/TrueImages/9.png",
+                "type": "image",
+                "key": "9_1"
+            },
+            {
+                "url": [
+                    "assets/audio/placed.mp3"
+                ],
+                "type": "audio",
+                "key": "placed"
+            },
+            {
+                "url": "assets/images/sky1.png",
+                "type": "image",
+                "key": "sky1"
+            },
+            {
+                "url": "assets/images/sky2.png",
+                "type": "image",
+                "key": "sky2"
+            },
+            {
+                "url": "assets/images/back.jpg",
+                "type": "image",
+                "key": "back"
+            },
+            {
+                "url": "assets/images/back.png",
+                "type": "image",
+                "key": "back_1"
+            },
+            {
+                "url": [
+                    "assets/audio/music.mp3"
+                ],
+                "type": "audio",
+                "key": "music"
+            },
+            {
+                "url": "assets/images/waterFall.png",
+                "type": "image",
+                "key": "waterFall"
+            },
+            {
+                "url": "assets/images/home.png",
+                "type": "image",
+                "key": "home"
+            },
+            {
+                "url": "assets/images/bgHome.png",
+                "type": "image",
+                "key": "bgHome"
+            },
+            {
+                "url": "assets/levels/Home.js",
+                "type": "sceneFile",
+                "key": "Home"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2
+    }
+}
