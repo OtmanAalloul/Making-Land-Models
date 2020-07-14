@@ -227,6 +227,21 @@
                 "url": "assets/levels/Home.js",
                 "type": "sceneFile",
                 "key": "Home"
+            },
+            {
+                "url": "assets/levels/Play_1.js",
+                "type": "sceneFile",
+                "key": "Play_1"
+            },
+            {
+                "url": "assets/images/title1.png",
+                "type": "image",
+                "key": "title1"
+            },
+            {
+                "url": "assets/images/title.png",
+                "type": "image",
+                "key": "title"
             }
         ]
     },

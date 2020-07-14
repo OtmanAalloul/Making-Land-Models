@@ -6,7 +6,7 @@ class Play extends Phaser.Scene {
 	}
 	
 	preload() {
-		
+
 		this.load.image('title', 'assets/images/title.png');
 		this.load.image('home', 'assets/images/home.png');
     	this.load.image('i1', 'assets/images/DragImages/1.png');
@@ -34,6 +34,7 @@ class Play extends Phaser.Scene {
 		this.load.image('i23', 'assets/images/DragImages/12.png');
     	this.load.image('i24', 'assets/images/TrueImages/12.png');
 		this.load.audio('placed', ['assets/audio/placed.mp3', 'assets/audio/placed.mp3']);
+		this.load.audio('succes', ['assets/audio/music.mp3', 'assets/audio/music.mp3']);
 		this.load.audio('music', ['assets/audio/music.mp3', 'assets/audio/music.mp3']);
 	}
 
@@ -62,6 +63,9 @@ class Play extends Phaser.Scene {
 		var bg = this.sound.add('music');
 		bg.play();
 		bg.volume = 0.3;
+
+		//succes music
+		var succes = this.sound.add('succes');
 
 		//add home button
 		var playButton = this.add.sprite(30, 30, 'home').setInteractive();
@@ -365,13 +369,14 @@ class Play extends Phaser.Scene {
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
+				bg.destroy();
+				succes.play();
 			}  
 			else{
 				this.x = 700;
 				this.y = 90;
 			}
         });
-		
 	}
 }
 
