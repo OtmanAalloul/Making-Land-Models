@@ -115,7 +115,7 @@ class Play extends Phaser.Scene {
 		var i16 = this.add.sprite(700, 90, 'i16').setInteractive();
 		i16.visible = false;
 
-		var i13 = this.add.sprite(540, 390, 'i13');
+		var i13 = this.add.sprite(490, 390, 'i13');
 		var i14 = this.add.sprite(700, 90, 'i14').setInteractive();
 		i14.visible = false;
 
@@ -262,8 +262,8 @@ class Play extends Phaser.Scene {
             this.y = dragY;
         });
 		i14.on('dragend', function (pointer) {
-			if(this.x<620 && this.x>500 && this.y<440 && this.y>320){
-				this.x = 540;
+			if(this.x<550 && this.x>420 && this.y<440 && this.y>320){
+				this.x = 490;
 				this.y = 390;
 				fx.play();
 				this.setInteractive(false);
