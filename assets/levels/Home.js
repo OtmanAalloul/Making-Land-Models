@@ -8,7 +8,7 @@ class Home extends Phaser.Scene {
 	preload(){
 
 		//backgound music
-		this.load.audio('music', ['assets/audio/music.mp3', 'assets/audio/music.mp3']);
+		this.load.audio('MenuBg', ['assets/audio/MenuBg.mp3', 'assets/audio/MenuBg.mp3']);
 		
 		//island
 		this.load.image('island', 'assets/images/island.png');
@@ -32,7 +32,7 @@ class Home extends Phaser.Scene {
 		this.add.image(399, 270, "bgHome");
 
 		//backgound music
-		var bg = this.sound.add('music');
+		var bg = this.sound.add('MenuBg');
 		bg.play();
 		bg.volume = 0.3;
 		

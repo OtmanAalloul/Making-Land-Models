@@ -1,10 +1,10 @@
 
 class Play extends Phaser.Scene {
-	
+
 	constructor() {
 		super("Play");
 	}
-	
+
 	preload() {
 
 		this.load.image('title', 'assets/images/title.png');
@@ -34,21 +34,32 @@ class Play extends Phaser.Scene {
 		this.load.image('i23', 'assets/images/DragImages/12.png');
     	this.load.image('i24', 'assets/images/TrueImages/12.png');
 		this.load.audio('placed', ['assets/audio/placed.mp3', 'assets/audio/placed.mp3']);
-		this.load.audio('succes', ['assets/audio/music.mp3', 'assets/audio/music.mp3']);
+		this.load.audio('succes', ['assets/audio/win.mp3', 'assets/audio/win.mp3']);
 		this.load.audio('music', ['assets/audio/music.mp3', 'assets/audio/music.mp3']);
+
+        //Aswat
+
+        this.load.audio('c1', ['assets/audio/3osfor.mp3', 'assets/audio/3osfor.mp3']);
+        this.load.audio('c2', ['assets/audio/9ird.mp3', 'assets/audio/9ird.mp3']);
+        this.load.audio('c3', ['assets/audio/assad.mp3', 'assets/audio/assad.mp3']);
+        this.load.audio('c4', ['assets/audio/fil.mp3', 'assets/audio/fil.mp3']);
+        this.load.audio('c5', ['assets/audio/hissan.mp3', 'assets/audio/hissan.mp3']);
+        this.load.audio('c6', ['assets/audio/ma3iz.mp3', 'assets/audio/ma3iz.mp3']);
+        this.load.audio('c7', ['assets/audio/namir.mp3', 'assets/audio/namir.mp3']);
+        this.load.audio('c8', ['assets/audio/solohfat.mp3', 'assets/audio/solohfat.mp3']);
 	}
 
 	create() {
-		
+
 		// sky
 		this.add.image(121, 272, "back_1");
-		
+
 		// mountains
 		this.add.image(338, 97, "rocks_1");
-		
+
 		// waterFall
 		this.add.image(289, 264, "waterFall");
-		
+
 		// jungle
 		this.add.image(400, 272, "backgound");
 
@@ -58,6 +69,16 @@ class Play extends Phaser.Scene {
 		//add sound for correct answer
 		var fx = this.sound.add('placed');
 		fx.volume = 0.2;
+
+        //Aswat
+        var c1 = this.sound.add('c1');
+        var c2 = this.sound.add('c2');
+        var c3 = this.sound.add('c3');
+        var c4 = this.sound.add('c4');
+        var c5 = this.sound.add('c5');
+        var c6 = this.sound.add('c6');
+        var c7 = this.sound.add('c7');
+        var c8 = this.sound.add('c8');
 
 		//backgound music
 		var bg = this.sound.add('music');
@@ -72,8 +93,9 @@ class Play extends Phaser.Scene {
 		playButton.on('pointerdown', function (event) {
   		this.scene.start('Home');
 		bg.destroy();
+        succes.destroy();
 		}, this);
-		
+
 		//add animals sounds
 
 		//add drag images
@@ -88,10 +110,6 @@ class Play extends Phaser.Scene {
 		var i17 = this.add.sprite(220, 120, 'i17');
 		var i18 = this.add.sprite(700, 90, 'i18').setInteractive();
 		i18.visible = false;
-
-		var i7 = this.add.sprite(600, 300, 'i7');
-		var i8 = this.add.sprite(700, 90, 'i8').setInteractive();
-		i8.visible = false;
 
 		var i15 = this.add.sprite(300, 340, 'i15');
 		var i16 = this.add.sprite(700, 90, 'i16').setInteractive();
@@ -121,6 +139,10 @@ class Play extends Phaser.Scene {
 		var i24 = this.add.sprite(700, 90, 'i24').setInteractive();
 		i24.visible = false;
 
+		var i7 = this.add.sprite(600, 300, 'i7');
+		var i8 = this.add.sprite(700, 90, 'i8').setInteractive();
+		i8.visible = false;
+
 
 		//add 3 image
 		var i5 = this.add.sprite(100, 70, 'i5');
@@ -133,12 +155,12 @@ class Play extends Phaser.Scene {
 		i6.on('dragend', function (pointer) {
 			if(this.x<170 && this.x>10 && this.y<170 && this.y>10){
 				this.x = 100;
-				this.y = 70;	
+				this.y = 70;
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
 				i2.visible = true;
-			}  
+			}
 			else{
 				this.x = 700;
 				this.y = 90;
@@ -154,18 +176,18 @@ class Play extends Phaser.Scene {
 		i2.on('dragend', function (pointer) {
 			if(this.x<770 && this.x>650 && this.y<310 && this.y>200){
 				this.x = 700;
-				this.y = 260;	
+				this.y = 260;
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
 				i10.visible = true;
-			}  
+			}
 			else{
 				this.x = 700;
 				this.y = 90;
 			}
         });
-		
+
 		//add 5 image
 		this.input.setDraggable(i10);
 		i10.on('drag', function (pointer, dragX, dragY) {
@@ -175,12 +197,13 @@ class Play extends Phaser.Scene {
 		i10.on('dragend', function (pointer) {
 			if(this.x<800 && this.x>690 && this.y<400 && this.y>300){
 				this.x = 740;
-				this.y = 350;	
+				this.y = 350;
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
 				i18.visible = true;
-			}  
+                c8.play();
+			}
 			else{
 				this.x = 700;
 				this.y = 90;
@@ -197,33 +220,13 @@ class Play extends Phaser.Scene {
 		i18.on('dragend', function (pointer) {
 			if(this.x<300 && this.x>150 && this.y<200 && this.y>70){
 				this.x = 220;
-				this.y = 120;	
-				fx.play();
-				this.setInteractive(false);
-				this.input.draggable = false;
-				i8.visible = true;
-			}  
-			else{
-				this.x = 700;
-				this.y = 90;
-			}
-        });
-
-		//add 4 image
-		this.input.setDraggable(i8);
-		i8.on('drag', function (pointer, dragX, dragY) {
-            this.x = dragX;
-            this.y = dragY;
-        });
-		i8.on('dragend', function (pointer) {
-			if(this.x<670 && this.x>550 && this.y<370 && this.y>250){
-				this.x = 600;
-				this.y = 300;	
+				this.y = 120;
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
 				i16.visible = true;
-			}  
+                c1.play();
+			}
 			else{
 				this.x = 700;
 				this.y = 90;
@@ -239,12 +242,13 @@ class Play extends Phaser.Scene {
 		i16.on('dragend', function (pointer) {
 			if(this.x<360 && this.x>250 && this.y<400 && this.y>280){
 				this.x = 300;
-				this.y = 340;	
+				this.y = 340;
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
 				i14.visible = true;
-			}  
+                c3.play();
+			}
 			else{
 				this.x = 700;
 				this.y = 90;
@@ -260,12 +264,13 @@ class Play extends Phaser.Scene {
 		i14.on('dragend', function (pointer) {
 			if(this.x<620 && this.x>510 && this.y<440 && this.y>320){
 				this.x = 570;
-				this.y = 390;	
+				this.y = 390;
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
 				i20.visible = true;
-			}  
+                c4.play();
+			}
 			else{
 				this.x = 700;
 				this.y = 90;
@@ -281,12 +286,12 @@ class Play extends Phaser.Scene {
 		i20.on('dragend', function (pointer) {
 			if(this.x<270 && this.x>130 && this.y<410 && this.y>300){
 				this.x = 200;
-				this.y = 350;	
+				this.y = 350;
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
 				i4.visible = true;
-			}  
+			}
 			else{
 				this.x = 700;
 				this.y = 90;
@@ -302,12 +307,13 @@ class Play extends Phaser.Scene {
 		i4.on('dragend', function (pointer) {
 			if(this.x<160 && this.x>40 && this.y<260 && this.y>140){
 				this.x = 100;
-				this.y = 200;	
+				this.y = 200;
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
 				i12.visible = true;
-			}  
+                c2.play();
+			}
 			else{
 				this.x = 700;
 				this.y = 90;
@@ -323,12 +329,13 @@ class Play extends Phaser.Scene {
 		i12.on('dragend', function (pointer) {
 			if(this.x<150 && this.x>0 && this.y<420 && this.y>290){
 				this.x = 70;
-				this.y = 370;	
+				this.y = 370;
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
 				i22.visible = true;
-			}  
+                c7.play();
+			}
 			else{
 				this.x = 700;
 				this.y = 90;
@@ -344,12 +351,13 @@ class Play extends Phaser.Scene {
 		i22.on('dragend', function (pointer) {
 			if(this.x<450 && this.x>350 && this.y<400 && this.y>270){
 				this.x = 400;
-				this.y = 320;	
+				this.y = 320;
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
 				i24.visible = true;
-			}  
+                c5.play();
+			}
 			else{
 				this.x = 700;
 				this.y = 90;
@@ -365,18 +373,41 @@ class Play extends Phaser.Scene {
 		i24.on('dragend', function (pointer) {
 			if(this.x<520 && this.x>400 && this.y<300 && this.y>180){
 				this.x = 470;
-				this.y = 230;	
+				this.y = 230;
 				fx.play();
 				this.setInteractive(false);
 				this.input.draggable = false;
-				bg.destroy();
-				succes.play();
-			}  
+        c6.play();
+				i8.visible = true;
+
+			}
 			else{
 				this.x = 700;
 				this.y = 90;
 			}
         });
+
+				//add 4 image
+				this.input.setDraggable(i8);
+				i8.on('drag', function (pointer, dragX, dragY) {
+								this.x = dragX;
+								this.y = dragY;
+						});
+				i8.on('dragend', function (pointer) {
+					if(this.x<670 && this.x>550 && this.y<370 && this.y>250){
+						this.x = 600;
+						this.y = 300;
+						fx.play();
+						bg.destroy();
+						this.setInteractive(false);
+						this.input.draggable = false;
+						succes.play();
+		        succes.volume = 1;
+					}
+					else{
+						this.x = 700;
+						this.y = 90;
+					}
+						});
 	}
 }
-
