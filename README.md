@@ -50,8 +50,8 @@ The game was developed as 2D game using [Phaser](https://en.wikipedia.org/wiki/P
 [1] . The island section contains animals and caracters, and the child must place the animals and caracters in the correct places.
 [2] . As soon as the animal and caracter is placed in the right place, the child will hear the animal's and caracter's name and their voice.
 
-[![Menu](https://github.com/OtmanAalloul/Making-Land-Models/blob/master/ScreenShots/Island01.png?raw=true)](https://github.com/OtmanAalloul/Making-Land-Models/blob/master/ScreenShots/Island01.png)
-[![Menu](https://github.com/OtmanAalloul/Making-Land-Models/blob/master/ScreenShots/Island02.png?raw=true)](https://github.com/OtmanAalloul/Making-Land-Models/blob/master/ScreenShots/Island02.png)
+[![Menu](https://github.com/OtmanAalloul/Making-Land-Models/blob/master/ScreenShots/Island01.PNG?raw=true)](https://github.com/OtmanAalloul/Making-Land-Models/blob/master/ScreenShots/Island01.PNG)
+[![Menu](https://github.com/OtmanAalloul/Making-Land-Models/blob/master/ScreenShots/Island02.PNG?raw=true)](https://github.com/OtmanAalloul/Making-Land-Models/blob/master/ScreenShots/Island02.PNG)
 
 
 ### To play online using your browser : 
