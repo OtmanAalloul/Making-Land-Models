@@ -3,7 +3,7 @@ This project is about a serious game that aims to help children from three to si
 
 ## Youtube video :
 
-[![Menu](https://github.com/OtmanAalloul/Making-Land-Models/blob/master/ScreenShots/Jungle02.png?raw=true)](https://www.youtube.com/watch?v=P-AkPWA6io4&t=38s)
+[![Menu](https://github.com/OtmanAalloul/Making-Land-Models/blob/master/ScreenShots/PlayOnYoutube.png?raw=true)](https://www.youtube.com/watch?v=P-AkPWA6io4&t=38s)
 
 
 ## What is making the land models game?
